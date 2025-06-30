@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Borobudur Temple",
+        "category": "temple",
+        "imageUrl": "images/borobudur.jpg",
+        "description": "The largest Buddhist temple in the world, located in Java."
+    },
+    {
+        "name": "Nusa Dua Beach",
+        "category": "beach",
+        "imageUrl": "images/nusa_dua.jpg",
+        "description": "A beautiful beach in Bali known for its white sands."
+    },
+    {
+        "name": "Japan",
+        "category": "country",
+        "imageUrl": "images/japan.jpg",
+        "description": "A country known for its culture, food, and cherry blossoms."
+    }
+]

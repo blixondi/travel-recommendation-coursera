@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shem Travel - About Us</title>
+    <style>
+        body {
+            background-image: url('japan-bg.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            /* Vertically center items */
+            justify-content: space-between;
+            background-color: #333;
+            padding: 0 16px;
+            list-style: none;
+            margin: 0;
+            height: 60px;
+        }
+
+        .nav_left {
+            display: flex;
+        }
+
+        .nav_child {
+            display: flex;
+        }
+
+        .nav_child a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .nav_child a:hover {
+            background-color: #111;
+        }
+
+        .active a {
+            background-color: #fcb322;
+        }
+
+        .search_container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .search_container input[type="text"] {
+            padding: 6px 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .search_container button {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #fcb322;
+            color: #333;
+        }
+
+        .search_container button:hover {
+            background-color: #e0a800;
+        }
+
+        .about-us {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 40px auto;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .about-us h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .about-us p {
+            font-size: 18px;
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .our-team {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .our-team h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .team-member {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .team-member h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #222;
+        }
+
+        .team-member p {
+            color: #777;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <!-- Left side menu -->
+        <div class="nav_left">
+            <li class="nav_child "><a href="travel_recommendation.html">Home</a></li>
+            <li class="nav_child active"><a href="about_us.html">About Us</a></li>
+            <li class="nav_child"><a href="contact_us.html">Contact Us</a></li>
+        </div>
+
+        <!-- Right side search -->
+        <li class="search_container">
+            <input type="text" placeholder="Search..." id="searchInput" />
+            <button onclick="search()">Search</button>
+            <button onclick="clearSearch()">Clear</button>
+        </li>
+    </ul>
+
+    <h1>About Us</h1>
+    <section class="about-us">
+        <h1>About Shem Travel</h1>
+        <p>
+            At <strong>Shem Travel</strong>, we believe that travel is more than just a journey—it's an experience that
+            shapes your story. Since our founding, we've dedicated ourselves to helping travelers like you discover the
+            world with ease, comfort, and unforgettable memories.
+        </p>
+        <p>
+            Whether you're chasing cherry blossoms in Japan, strolling through European cobblestone streets, or diving
+            into tropical adventures, Shem Travel provides curated travel experiences, exclusive deals, and personalized
+            service every step of the way.
+        </p>
+    </section>
+
+    <section class="our-team">
+        <h2>Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="shem.png" alt="Shem - Founder" />
+                <h3>Shem Blixondi H. H.</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="ashton.jpg" alt="Ashton - Travel Consultant" />
+                <h3>Ashton Fjall</h3>
+                <p>Senior Travel Consultant</p>
+            </div>
+            <div class="team-member">
+                <img src="ephaniel.png" alt="Ephaniel - Customer Support" />
+                <h3>Ephaniel Iscarion</h3>
+                <p>Customer Support Lead</p>
+            </div>
+            <div class="team-member">
+                <img src="haruto.png" alt="Haruto - Marketing" />
+                <h3>Haruto Shigeru</h3>
+                <p>Digital Marketing Specialist</p>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
